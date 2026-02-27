@@ -344,9 +344,9 @@ model MountTmpFs {
 }
 
 enum MountCacheSharing {
-  Shared = "shared",
-  Private = "private",
-  Locked = "locked",
+  Shared: "shared",
+  Private: "private",
+  Locked: "locked",
 }
 
 model MountCache {
