@@ -195,6 +195,15 @@ model ModuleDefaults {
 
   /** Secrets to mount for this module call. */
   secrets?: Array<Secret>;
+
+  /**
+   * A list of mounts that will be mounted for this module.
+   *
+   * Mounts with the same type and name defined for other modules will
+   * use the same mount. This is useful for sharing files between modules or stages
+   * without retaining the files in the final image.
+   */
+  mounts?: Array<Mount>;
 }
 
 @oneOf
